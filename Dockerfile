@@ -14,7 +14,9 @@ RUN apt-get update -y
 RUN apt-get install -y python3 python3-pip gstreamer-1.0 \
                         python3-gst-1.0 gstreamer1.0-plugins-ugly \
                         gir1.2-gst-rtsp-server-1.0 
-RUN pip install opencv-python==4.9.0.80 
+
+RUN pip install numpy==1.26.4
+RUN pip install opencv-python==4.10.0
 
 EXPOSE 8554
 
